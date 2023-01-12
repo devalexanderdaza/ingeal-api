@@ -34,7 +34,6 @@ export class CharacterController {
     @Query() query: CharacterFiltersDto,
   ): Promise<Info<Character[]>> {
     const { name, status, species, type, gender } = query;
-    console.log(query);
     const filters: ICharacterFilters = {};
     if (name !== undefined) filters.name = name;
     if (status !== undefined) {
