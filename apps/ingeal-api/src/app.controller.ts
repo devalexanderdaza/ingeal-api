@@ -11,4 +11,10 @@ export class AppController {
   getApiStatus(): object {
     return this.appService.apiStatus();
   }
+
+  @Get('rick-and-morty-characters')
+  async getRickAndMortyCharacters(): Promise<object> {
+    const { data } = await this.appService.getRickAndMortyCharacters();
+    return data;
+  }
 }

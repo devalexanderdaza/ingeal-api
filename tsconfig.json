@@ -23,12 +23,6 @@
       ],
       "@app/common/*": [
         "libs/common/src/*"
-      ],
-      "@app/rickandmorty": [
-        "libs/rickandmorty/src"
-      ],
-      "@app/rickandmorty/*": [
-        "libs/rickandmorty/src/*"
       ]
     }
   }

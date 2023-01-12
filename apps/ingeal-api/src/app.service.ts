@@ -1,5 +1,6 @@
 import { ISuccessResponse, SuccessResponse } from '@app/common';
 import { Injectable } from '@nestjs/common';
+import { getCharacters } from 'rickmortyapi';
 
 @Injectable()
 export class AppService {
@@ -7,5 +8,9 @@ export class AppService {
     return {
       message: 'API Running!',
     };
+  }
+
+  async getRickAndMortyCharacters() {
+    return await getCharacters();
   }
 }
