@@ -2,6 +2,29 @@
 
 This is a sample backend application for consume a Rick and Morty API, using NestJS and Swagger documentation for Ingeal
 
+## Tech stack
+
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [NestJS](https://nestjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Swagger](https://swagger.io/)
+
+## After run the Ingeal API
+
+After running this API, you can access to Swagger documentation in the next URL: http://localhost:3000/documentation. Please use Swagger for test this API and play with it.
+
+<p align="center">
+  <a href="#"><img src="./assets/swagger.png" width="1200" alt="Nest Logo" /></a>
+</p>
+
+This API has the next endpoints:
+
+- GET /api-status
+- GET /rick-and-morty-characters
+- GET /rick-and-morty-character/:id
+- GET /rick-and-morty-characters-filtered
+
 ## Installation
 
 ```bash
