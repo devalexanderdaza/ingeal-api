@@ -27,6 +27,24 @@
       "compilerOptions": {
         "tsConfigPath": "apps/microservice/tsconfig.app.json"
       }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "rickandmorty": {
+      "type": "library",
+      "root": "libs/rickandmorty",
+      "entryFile": "index",
+      "sourceRoot": "libs/rickandmorty/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/rickandmorty/tsconfig.lib.json"
+      }
     }
   }
 }
