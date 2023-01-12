@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
+import { CharacterController } from './character.controller';
 
 @Module({
   imports: [
@@ -34,7 +35,7 @@ import * as Joi from 'joi';
       },
     }),
   ],
-  controllers: [AppController],
+  controllers: [AppController, CharacterController],
   providers: [AppService],
 })
 export class AppModule {}
