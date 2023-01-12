@@ -1,6 +1,7 @@
 import { ISuccessResponse, SuccessResponse } from '@app/common';
 import { Injectable } from '@nestjs/common';
-import { getCharacters } from 'rickmortyapi';
+import { getCharacter, getCharacters } from 'rickmortyapi';
+import { Info, Character } from 'rickmortyapi/dist/interfaces';
 
 @Injectable()
 export class AppService {
@@ -10,7 +11,13 @@ export class AppService {
     };
   }
 
-  async getRickAndMortyCharacters() {
-    return await getCharacters();
+  async getRickAndMortyCharacters(): Promise<Info<Character[]>> {
+    const { data } = await getCharacters();
+    return data;
+  }
+
+  async getRickAndMortyCharacterById(id: number): Promise<Character> {
+    const { data } = await getCharacter(id);
+    return data;
   }
 }
