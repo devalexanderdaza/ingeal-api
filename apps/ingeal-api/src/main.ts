@@ -31,6 +31,9 @@ async function bootstrap() {
   // Get configuration service
   const configuration: ConfigService = app.get(ConfigService);
 
+  // Enable CORS
+  app.enableCors();
+
   // Configure global filters, interceptors and pipes
   app.useGlobalFilters(new AllExceptionsFilter());
   app.useGlobalInterceptors(
