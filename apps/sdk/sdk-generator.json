@@ -2,5 +2,6 @@
   "apiInputPath": "../ingeal-api",
   "sdkOutput": "lib",
   "sdkInterfacePath": "sdk-interface.ts",
+  "tsconfigFile": "tsconfig.app.json",
   "verbose": true
 }
